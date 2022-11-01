@@ -1,417 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burning Man</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!--CSS-->
-    <link rel="stylesheet" href="css/main.css">
-    <!--Slider-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 
-</head>
+    <title>Озон Агро Групп</title>
+  </head>
+  <body>
 
-<body>
-    <!-- IF there is some blocks that will appear------ 
-
-    <div class="appeared-back" id="appeared-back">
-        
+    <!--HEADER-->
+    <div class="header">
+        <div class="header-inner">
+            <img class="logo" src="img/logo.png">
+            <div class="header-right">
+                <div class="right-up">
+                    <img src="img/call.png" alt="" style="width: 20px; margin-right: 11px;">
+                    <h5>+7 (777) 777‒77‒77</h5>
+                    <button>ЗАКАЗАТЬ ЗВОНОК</button>
+                </div>
+                <div class="right-down">
+                    <h5>О НАС</h5>
+                    <h5>ОБОРУДОВАНИЕ</h5>
+                    <h5>ОБЛАСТИ ПРИМЕНЕНИЯ</h5>
+                    <h5>УСЛУГИ</h5>
+                    <h5>КЛИЕНТАМ</h5>
+                    <h5>НОВОСТИ</h5>
+                    <h5>КОНТАКТЫ</h5>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="appeared" id="appeared">
-        <div class="xClose"></div>
+
+
+    <div class="container-1">
+        <div class="con-l">
+            <h1>Озонаторы<br>воздуха</h1>
+            <h4>Очистка воздуха и устранение <br> неприятных запахов</h4>
+            <button>В КАТАЛОГ</button>
+        </div>
+
+        <div class="con-r">
+            <img src="img/mini_img_1.png" style="width: 44px; margin-bottom: 11px;" alt="">
+            <img src="img/mini_img_2.png" style="width: 44px; margin-bottom: 11px;" alt="">
+            <img src="img/mini_img_3.png" style="width: 44px; margin-bottom: 11px;" alt="">
+        </div>
     </div>
-    -----IF there is some blocks that will appear -->
-    
-    <header id="header" class="header">
-        <div class="container">
-            <div class="nav">
-                <img src="/img/header-img/logo.png" alt="" class="logo">
-                <ul class="ul-1">
-                    <li><a href="#" style="color: #5E81FE;">Home</a></li>
-                    <li><a href="#" style="color: #697CA6;">Blog</a></li>
-                    <li><a href="#" style="color: #697CA6;">Features</a></li>
-                    <li><a href="#" style="color: #697CA6;">Pricing</a></li>
-                    <li><a href="#" style="color: #697CA6;">Documentation</a></li>
-                </ul>
-                <ul class="ul-2"> <!--site Logo`s-->
-                    <a href="#"><li><img src="/img/header-img/f.png" alt="" class="logoFace"></li></a>
-                    <a href="#"><li><img src="/img/header-img/Vector.png" alt="" class="logoTele"></li></a>
-                    <a href="#"><li><img src="/img/header-img/Twitter.png" alt="" class="logoTwit"></li></a>
-                    <a href="#"><li><img src="/img/header-img/M.png" alt="" class="logoM"></li></a>
-                </ul>
-                <a href="#" class="nav-btn">Get started</a>
-            </div>
-
-            <div class="center-container">
-                <div class="clouds">
-                    <div class="cloud1"></div>
-                    <div class="cloud2"></div>
-                    <div class="cloud3"></div>
-                </div>
-                <div class="main-content">
-                    <h5>Plan your life</h5>
-                    <div class="oneline-word">
-                        <h1 class="first-h1">Increase your </h1>
-                        <h1 class="sec-h1">productivity</h1>
-                    </div>
-                    <div class="block_4_content">
-                        <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
-                    </div>
-                    <div class="circle-play">
-                        <img src="/img/header-img/triangle.png" alt="" class="triangle-play">
-                    </div>
-                </div>
-            </div>
-            <div class="header-footer">
-                <ul>
-                    <li><img src="/img/header-footer-img/bitbucket.png" alt="" class="header-footer-img"></li>
-                    <li><img src="/img/header-footer-img/watch.png" alt class="header-footer-img"></li>
-                    <li><img src="/img/header-footer-img/facebook.png" alt="" class="header-footer-img"></li>
-                    <li><img src="/img/header-footer-img/atlassian.png" alt="" class="header-footer-img"></li>
-                    <li><img src="/img/header-footer-img/audi.png" alt="" class="header-footer-img"></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <section id="about" class="about">
-        <div class="container">
-            <div class="app-part">
-                <div class="app-content">
-                    <h5>DESKTOP AND MOBILE APP</h5>
-                    <h2>Plan and manage</h2>
-                    <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.</p>
-                    <div class="app-part-btns">
-                        <div class="app-part-btn apb1">View video</div>
-                        <div class="app-part-btn apb2">See features</div>
-                    </div>
-                    
-                </div>
-                <div class="app-images">
-                    <img src="/img/devices-img/all.png" alt="" class="device">
-                </div>
-            </div>
-            <div class="read-about">
-                <div class="clouds">
-                
-                </div>
-                <div class="main-content">
-                    <h5>about us</h5>
-                    <h3>Read about our app</h3>
-                </div>
-                <div class="read-about-circles">
-                    <div class="read-about-circle">
-                        <img src="/img/read-about-img/1.png" alt="">
-                    </div>
-                    <div class="read-about-circle">
-                        <img src="/img/read-about-img/2.png" alt="">
-                    </div>
-                    <div class="read-about-circle">
-                        <img src="/img/read-about-img/3.png" alt="">
-                    </div>
-                    <div class="read-about-circle circle4">
-                        <img src="/img/read-about-img/4.png" alt="">
-                    </div>
-                </div>
-                <div class="read-about-content">
-                    <div class="read-about-content-block">
-                        <h4>Overview</h4>
-                        <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</p>
-                    </div>
-                    <div class="read-about-content-block">
-                        <h4>Files</h4>
-                        <p>No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.</p>
-                    </div>
-                    <div class="read-about-content-block">
-                        <h4>Meeting chats</h4>
-                        <p>Vim ne tacimates neglegentur. Erat diceret omittam at est.</p>
-                    </div>
-                    <div class="read-about-content-block circle4">
-                        <h4>Save events</h4>
-                        <p>Nisl idque mel ea, nominati voluptatum.
-                        </p>
-                    </div>
-                </div>
-                <div class="read-about-btns">
-                    <div class="read-about-btn rab1">Read more</div>
-                    <p>OR</p>
-                    <div class="read-about-btn rab2">Get started</div>
-                </div>
-            </div>
-            <div class="double-block">
-                <div class="double-block1">
-                    <img src="/img/double-block/speed.png" alt="">
-                    <h1>89%</h1>
-                    <p>Customers who have increased their productivity</p>
-                </div>
-                <div class="double-block2">
-                    <img src="/img/double-block/humans.png" alt="">
-                    <h1>3123</h1>
-                    <p>Users who have used our application</p>
-                </div>
-            </div>
-            <div class="slider-block">
-                <h5>OUR RESOUrCES</h5>
-                <h3>Start reading our blog</h3>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slider-content">
-                                <div class="slider-content-img">
-                                    <img src="/img/slider-img/Rectangle3.png" alt="">
-                                </div>
-                                <div class="slider-content-img-double">
-                                    <img src="/img/slider-img/Rectangle3.1.png" alt="" class="slider-double-img1">
-                                    <img src="/img/slider-img/Rectangle3.2.png" alt="">
-                                </div>
-                                <div class="slider-content-info">
-                                    <h2>How to start planning</h2>
-                                    <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</p>
-                                    <div class="slider-buttons">
-                                        <div class="slider-btn1">Read now</div>
-                                        <div class="slider-btn2">Add to your bookmarks</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-content">
-                                <div class="slider-content-img">
-                                    <img src="/img/slider-img/Rectangle3.png" alt="">
-                                </div>
-                                <div class="slider-content-img-double">
-                                    <img src="/img/slider-img/Rectangle3.1.png" alt="" class="slider-double-img1">
-                                    <img src="/img/slider-img/Rectangle3.2.png" alt="">
-                                </div>
-                                <div class="slider-content-info">
-                                    <h2>How to start planning</h2>
-                                    <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</p>
-                                    <div class="slider-buttons">
-                                        <div class="slider-btn1">Read now</div>
-                                        <div class="slider-btn2">Add to your bookmarks</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-content">
-                                <div class="slider-content-img">
-                                    <img src="/img/slider-img/Rectangle3.png" alt="">
-                                </div>
-                                <div class="slider-content-img-double">
-                                    <img src="/img/slider-img/Rectangle3.1.png" alt="" class="slider-double-img1">
-                                    <img src="/img/slider-img/Rectangle3.2.png" alt="">
-                                </div>
-                                <div class="slider-content-info">
-                                    <h2>How to start planning</h2>
-                                    <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</p>
-                                    <div class="slider-buttons">
-                                        <div class="slider-btn1">Read now</div>
-                                        <div class="slider-btn2">Add to your bookmarks</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-                <span class="button-next" id="button-next">&#10140;</span>
-                <span class="button-prev" id="button-prev">&#10140;</span>
-                
-                
-            </div>
-            <div class="comments-section">
-                <div class="comments-section-content">
-                    <h5>TESTIMONIALS</h5>
-                    <h2>Customers's quotes</h2>
-                    <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</p>
-                </div>
-                <div class="coment-section-comments">
-                    <div class="swiper mySwiper7">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                                <div class="sec-slider-content">
-                                    <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                                </div>
-                                <div class="comments-img-container">
-                                    <img src="/img/slider-img/Photo.jpg" alt="">
-                                </div>
-                                
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="sec-slider-content">
-                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            </div>
-                            <div class="comments-img-container">
-                                <img src="/img/slider-img/Photo.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="sec-slider-content">
-                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            </div>
-                            <div class="comments-img-container">
-                                <img src="/img/slider-img/Photo.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="sec-slider-content">
-                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            </div>
-                            <div class="comments-img-container">
-                                <img src="/img/slider-img/Photo.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="sec-slider-content">
-                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            </div>
-                            <div class="comments-img-container">
-                                <img src="/img/slider-img/Photo.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="sec-slider-content">
-                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            </div>
-                            <div class="comments-img-container">
-                                <img src="/img/slider-img/Photo.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="sec-slider-content">
-                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            </div>
-                            <div class="comments-img-container">
-                                <img src="/img/slider-img/Photo.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="sec-slider-content">
-                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            </div>
-                            <div class="comments-img-container">
-                                <img src="/img/slider-img/Photo.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="sec-slider-content">
-                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            </div>
-                            <div class="comments-img-container">
-                                <img src="/img/slider-img/Photo.jpg" alt="">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-pagination7"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="drop-down-info">
-                <h5>Customer help</h5>
-                <h3>Frequently asked questions</h3>
-                <ul class="menu">
-                    <li>
-                        <label for="btn" class="first"><span>&#10095;</span>Reque insolens in vel?</label>
-                        <input type="checkbox" id="btn">
-                        <ul>
-                            <li><p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-                            </p></li>
-                        </ul>
-                    </li>
-                    <li class="line"></li>
-                    <li>
-                        <label for="btn1" class="first"><span>&#10095;</span>Vis rebum error graecis ea, id sit postea accusamus?</label>
-                        <input type="checkbox" id="btn1">
-                        <ul>
-                            <li><p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-                            </p></li>
-                        </ul>
-                    </li>
-                    <li class="line"></li>
-                    <li>
-                        <label for="btn2" class="first"><span>&#10095;</span>Lorem repudiandae ne nec?</label>
-                        <input type="checkbox" id="btn2">
-                        <ul>
-                            <li><p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-                            </p></li>
-                            <div class="drop-down-info-btn">Go to documentation</div>
-                        </ul>
-                    </li>
-                    <li class="line"></li>
-                    <li>
-                        <label for="btn3" class="first"><span>&#10095;</span>Ad dicit numquam vel. Et eos iudico feugait percipitur?</label>
-                        <input type="checkbox" id="btn3">
-                        <ul>
-                            <li><p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-                            </p></li>
-                        </ul>
-                    </li>
-                    <li class="line"></li>
-                    <li>
-                        <label for="btn4" class="first"><span>&#10095;</span>Sea no dico percipitur. Fierent constituam definitiones id eum?</label>
-                        <input type="checkbox" id="btn4">
-                        <ul>
-                            <li><p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-                            </p></li>
-                        </ul>
-                    </li>
-                    <li class="line"></li>
-                </ul>
-                
-            </div>
-        </div>
-    </section>
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="footer-started">
-                <h5>PLAN YOUR LIFE</h5>
-                <h1>Get started now</h1>
-                <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
-                <div class="footer-started-btns">
-                    <div class="footer-started-btn1">View pricing</div>
-                    <div class="footer-started-btn2">Read documentation</div>
-                </div>
-            </div>
-            <div class="footer-center">
-                <div class="footer-center-info">
-                    <h1>Sign up for newsletter</h1>
-                    <p>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
-                </div>
-                <div class="footer-center-email">
-                    <input type="text" onfocus="this.value=''" value="Email address">
-                    <button class="saveme-btn">Save me</button>
-                </div>
-            </div>
-            <div class="footer-last">
-                <div class="nav footer-nav">
-                    <img src="/img/header-img/logo.png" alt="" class="logo">
-                    <ul class="ul-1">
-                        <li><a href="#" style="color: #5E81FE;">Home</a></li>
-                        <li><a href="#" style="color: #697CA6;">Blog</a></li>
-                        <li><a href="#" style="color: #697CA6;">Features</a></li>
-                        <li><a href="#" style="color: #697CA6;">Pricing</a></li>
-                        <li><a href="#" style="color: #697CA6;">Documentation</a></li>
-                    </ul>
-                    <ul class="ul-2"> <!--site Logo`s-->
-                        <a href="#"><li><img src="/img/header-img/f.png" alt="" class="logoFace"></li></a>
-                        <a href="#"><li><img src="/img/header-img/Vector.png" alt="" class="logoTele"></li></a>
-                        <a href="#"><li><img src="/img/header-img/Twitter.png" alt="" class="logoTwit"></li></a>
-                        <a href="#"><li><img src="/img/header-img/M.png" alt="" class="logoM"></li></a>
-                    </ul>
-                    <a href="#" class="nav-btn">Get started</a>
-                </div>
-                <div class="footer-copyright">Copyright © 2018 by Random site</div>
-            </div>
-        </div>
-    </footer>
 
 
-    <script src="/js/script.js"></script>
-</body>
+    <div class="container-2">
+        <div class="con2-text">
+            <h3>ОБОРУДОВАНИЕ</h3>
+            <div class="double-line" style="margin: 0 auto; width: 100%; display: flex;justify-content: center;" >
+                <div class="first-line" style="background-color: #37A0CF;"></div>
+                <div class="sec-line" style="background-color: #37A0CF;"></div>
+            </div>
+        </div>
+        <div class="con2-inner">
+            <div class="con2-grid">
+                <img src="img/Rectangle 1417.png" alt="" style="border-bottom-left-radius:60px; margin-bottom: 38px;">
+                <h4 style="margin-bottom: 12px;">БЫТОВЫЕ ОЗОНАТОРЫ</h4>
+                <h5>ПОДРОБНЕЕ</h5>
+            </div>
+            <div class="con2-grid">
+                <img src="img/Rectangle 1417-1.png" alt="" style="border-bottom-left-radius:60px; margin-bottom: 38px;">
+                <h4 style="margin-bottom: 12px;">ПРОМЫШЛЕННЫЕ ОЗОНАТОРЫ</h4>
+                <h5>ПОДРОБНЕЕ</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-3">
+        <div class="con3-content">
+            <h3>НАШИ ПРЕИМУЩЕСТВА</h3>
+            <div class="double-line">
+                <div class="first-line"></div>
+                <div class="sec-line"></div>
+            </div>
+            <div class="con3-inner">
+                <div class="con3-grid">
+                    <img src="img/con3-img1.png" alt="">
+                    <h4>1.	Современные технологии</h4>
+                    <p>Современные и эффективные технологии очистки воздуха посредством озона</p>
+                </div>
+                <div class="con3-grid">
+                    <img src="img/con3-img2.png" alt="">
+                    <h4>2.	Забота об окружающей среде</h4>
+                    <p>Создание условий по сохранению, восстановлению и улучшению качества окружающей среды</p>
+                </div>
+                <div class="con3-grid">
+                    <img src="img/con3-img3.png" alt="">
+                    <h4>3.	Улучшение качества жизни людей</h4>
+                    <p>Миссия компании – забота об улучшении качества жизни населения страны</p>
+                </div>
+                <div class="con3-grid">
+                    <img src="img/con3-img4.png" alt="">
+                    <h4>4.	Широкая область применения</h4>
+                    <p>Сельское хозяйство, Земледелие, Животноводство, Птицеводство, Зерновое хозяйство и многие др.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-4">
+        <div class="con4-content">
+            <h3>ОБЛАСТИ ПРИМЕНЕНИЯ</h3>
+            <div class="double-line" style="margin: 0 auto; width: 100%; display: flex;justify-content: center;" >
+                <div class="first-line" style="background-color: #37A0CF;"></div>
+                <div class="sec-line" style="background-color: #37A0CF;"></div>
+            </div>
+            <div class="con4-inner">
+                <div class="con4-item con4-i1">
+                    <h5>СЕЛЬСКОЕ ХОЗЙСТВО</h5>
+                </div>
+                <div class="con4-item con4-i2">
+                    <h5>СЕЛЬСКОЕ ХОЗЙСТВО</h5>
+                </div>
+                <div class="con4-item con4-i3">
+                    <h5>СЕЛЬСКОЕ ХОЗЙСТВО</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-5">
+        <div class="con5-inner">
+            <h2>НАШИ УСЛУГИ</h2>
+            <div class="double-line">
+                <div class="first-line"></div>
+                <div class="sec-line"></div>
+            </div>
+            <p>Мы предлагаем Вам услугу разовой дезинфекции при помощи нашего озонатора</p>
+            <button>УЗНАТЬ БОЛЬШЕ</button>
+        </div>
+    </div>
+
+
+    <div class="container-6">
+        <div class="con6-content" style="text-align: center;">
+            <h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+            <div class="double-line" style="margin: 0 auto; width: 100%; display: flex;justify-content: center;" >
+                <div class="first-line" style="background-color: #37A0CF;"></div>
+                <div class="sec-line" style="background-color: #37A0CF;"></div>
+            </div>
+            <div class="comments">
+                <div class="com-item">
+                    <div class="user-info">
+                        <div class="user-img"></div>
+                        <div class="user-name-job">
+                            <h5>Алдияр Ахметов</h5>
+                            <h6>ТОО Техстрой</h6>
+                        </div>
+                    </div>
+                    <p>Мини-описание. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по которым наши копирайтеры составят правильный текст, который будет содержать в себе информацию о деятельности компании.
+                       <br><br> Мини-описание. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. </p>
+                </div>
+                <div class="com-item">
+                    <div class="user-info">
+                        <div class="user-img"></div>
+                        <div class="user-name-job">
+                            <h5>Алдияр Ахметов</h5>
+                            <h6>ТОО Техстрой</h6>
+                        </div>
+                    </div>
+                    <p>Мини-описание. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по которым наши копирайтеры составят правильный текст, который будет содержать в себе информацию о деятельности компании.
+                       <br><br> Мини-описание. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. </p>
+                </div><div class="com-item">
+                    <div class="user-info">
+                        <div class="user-img"></div>
+                        <div class="user-name-job">
+                            <h5>Алдияр Ахметов</h5>
+                            <h6>ТОО Техстрой</h6>
+                        </div>
+                    </div>
+                    <p>Мини-описание. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по которым наши копирайтеры составят правильный текст, который будет содержать в себе информацию о деятельности компании.
+                       <br><br> Мини-описание. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-7">
+        <div class="con7-inner">
+            <h2>ОБРАТНЫЙ ЗВОНОК</h2>
+            <div class="double-line">
+                <div class="first-line"></div>
+                <div class="sec-line"></div>
+            </div>
+            <h5>Оставить заявку на консультацию</h5>
+            <form action="" style="display: flex; margin-bottom: 50px;">
+                <div class="input-box">
+                    <input type="text" placeholder="Ваше имя" style="width: 275px;">
+                    <div class="line"></div>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Ваш телефон" style="width: 180px;">
+                    <div class="line"></div>
+                </div>
+            </form>
+            <button>ОТПРАВИТЬ</button>
+        </div>
+    </div>
+
+
+
+    <div class="container-8">
+        <div class="con8-content">
+            <h2>ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</h2>
+            <div class="double-line" style="margin: 0 auto; width: 100%; display: flex;justify-content: center;" >
+                <div class="first-line" style="background-color: #37A0CF;"></div>
+                <div class="sec-line" style="background-color: #37A0CF;"></div>
+            </div>
+            <div class="con8-grid">
+                <img src="img/sertificate.png" alt="" style="width: 270px;">
+                <img src="img/sertificate.png" alt="" style="width: 270px;">
+                <img src="img/sertificate.png" alt="" style="width: 270px;">
+                <img src="img/sertificate.png" alt="" style="width: 270px;">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+            <div class="footer-grid">
+                <div class="foot-item">
+                    <img class="logo" src="img/logo-footer.png" alt="" style="margin-right: 40px;">
+                </div>
+                <div class="foot-item">
+                    <h5>О КОМПАНИИ</h5>
+                    <a href="#"><h6>Главная</h6></a>
+                    <a href="#"><h6>О компании</h6></a>
+                    <a href="#"><h6>Области применения</h6></a>
+                    <a href="#"><h6>Наши услуги</h6></a>
+                </div>
+                <div class="foot-item">
+                    <h5 style="color: #151515;">О КОМПАНИИ</h5>
+                    <a href="#"><h6>Клиентам</h6></a>
+                    <a href="#"><h6>Новости</h6></a>
+                    <a href="#"><h6>Контакты</h6></a>
+                </div>
+                <div class="foot-item">
+                    <h5>ОБОРУДОВАНИЕ</h5>
+                    <a href="#"><h6>Бытовые озонаторы</h6></a>
+                    <a href="#"><h6>Промышленные озонаторы</h6></a>
+                </div>
+                <div class="foot-item">
+                    <h5>КОНТАКТЫ</h5>
+                    <a href="#"><h6>РК, г. Астана, <br> Кургальжинское шоссе, 13/5</h6></a>
+                    <a href="#"><h6>+ 7 (777) 777-77-77</h6></a>
+                    <a href="#"><h6>info@example-mail.kz</h6></a>
+                </div>
+                <div class="foot-item">
+                    <button>ЗАКАЗАТЬ ЗВОНОК</button>
+                </div>
+            </div>
+        <div class="footer-line"></div>
+        <h6>ABC DESIGN</h6>
+    </div>
+
+  </body>
 </html>
